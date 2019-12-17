@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPG Adventure</title>
+    <script src="rpgAdventureJQ.js" type="text/JavaScript"></script>
+    <link rel="stylesheet" href="rpgAdventure.css" type="text/CSS" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <row id="row1"><div id="header"></div></row>
+    <row id="row2">
+        <div class="leftColumn">
+            <div id="stats">Character Stats</div>
+            <div id="charHP"></div>
+            <div id="charStr"></div>
+            <div id="charDef"></div>
+        </div>
+        <div class="middleColumn">
+            <div id="textArea">
+                    <button id="startButton" onclick="beginAdventure()">Start Adventure!</button>
+            </div>
+            <div id="options">
+                <table>
+                    <tr>
+                        <td id="option1"></td>
+                        <td id="option2"></td>
+                        <td id="option3"></td>
+                        <td id="option4"></td>
+                    </tr>
+                </table>
+                <div id="battleScreen"></div>
+                <table>
+                    <tr>
+                        <td id="battleOption1"></td>
+                        <td id="battleOption2"></td>
+                        <td id="battleOption3"></td>
+                        <td id="battleOption4"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="gameWon"></div>
+        </div>
+        <div class="rightColumn" id="inventory"> 
+            <div id="potionStock"></div>
+            <div id="shield"></div>
+            <div id="sword"></div>
+        </div>
+    </row>
+</body>
+</html>
