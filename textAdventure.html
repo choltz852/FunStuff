@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text Adventure</title>
+    <script src="textAdventure.js" type="text/JavaScript" id="scriptTest"></script>
+    <link rel="stylesheet" href="textAdventure.css" type="text/CSS" />
+</head>
+<body>
+    <row id="row1"><div id="header"></div></row>
+    <row id="row2">
+        <div class="leftColumn">
+            <div id="achievements">Achievements</div>
+            <div id="isCurious"><div title='Obtained by examining stuff too long.'>1. ???</div></div>
+            <div id="napTaken"><div title='Obtained by taking a nap at an inopportune time.'>2. ???</div></div>
+            <div id="persistentSwimmer"><div title='Obtained by trying to swim an inordinate number of times.'>3. ???</div></div>
+            <div id="maxScore"><div title='Obtained by winning the game with the maximum score possible.'>4. ???</div></div>
+            <div id="minimumScore"><div title='Obtained by winning the game with the lowest score possible.'>5. ???</div></div>
+            <div id="allAchievements"><div title='Obtained by collecting all other achievements'>6. ???</div></div>
+        </div>
+        <div class="middleColumn">
+            <div id="textArea">
+                    <button id="startButton" onclick="returnToMeadow()">Start Adventure!</button>
+            </div>
+            <div id="options">
+                <table>
+                    <tr>
+                        <td id="option1"></td>
+                        <td id="option2"></td>
+                        <td id="option3"></td>
+                        <td id="option4"></td>
+                    </tr>
+                </table>
+                <div id="picture"></div>
+            </div>
+            <div id="gameWon"></div>
+        </div>
+        <div class="rightColumn" id="scoreboard"> 
+            <div id="highScore">High Score:</div>
+            <div id="score">Score:</div>
+        </div>
+    </row>
+</body>
+</html>
